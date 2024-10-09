@@ -1,5 +1,7 @@
 <?php
 
+require_once 'nodo.php';
+
 class Stack
 {
     public $head;
@@ -9,7 +11,7 @@ class Stack
     {
         if ($arr != null) {
             foreach ($arr as $value) {
-                $this->push($value);
+                $this->push($value['value']);
             }
         } else {
             $this->head = null;
@@ -32,7 +34,11 @@ class Stack
 
     public function pop()
     {
-        $this->head = $this->head->getNext();
+        if ($this->head instanceof Nodo) {
+            $this->head = $this->head->getNext();
+        } else {
+            echo "Stack is empty <br>";
+        }
     }
 
     //? Debo se;alar directamente el valor del nodo,
@@ -48,8 +54,12 @@ class Stack
         $current = $this->head;
 
         while ($current != null) {
-            echo $current->value . "<br>";
-            $current = $current->getNext();
+            if ($current instanceof Nodo) {
+                echo $current->value . "<br>";
+                $current = $current->getNext();
+            } else {
+                break;
+            }
         }
     }
 
