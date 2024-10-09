@@ -9,11 +9,11 @@ class Stack
 
     public function __construct($arr = null)
     {
-        if ($arr != null) {
+        if ($arr != null) { // si le paso un array, lo carga en la pila
             foreach ($arr as $value) {
                 $this->push($value['value']);
             }
-        } else {
+        } else { // si no le paso un array, entonces head y tail serán null (la pila estara vacia)
             $this->head = null;
             $this->tail = null;
         }

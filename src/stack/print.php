@@ -5,5 +5,3 @@ include '../read.php';
 $stack = new Stack(readJson());
 
 echo $stack->print();
-
-
