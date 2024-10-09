@@ -1,16 +1,11 @@
 [
     {
-        "nombre": "Juan",
-        "edad": 30,
-        "profesion": "Desarrollador"
+        "value": "📦 Papeles de oficina"
     },
     {
-        "nombre": "Marly",
-        "edad": 32,
-        "profesion": "Desarrollador FrontEnd"
+        "value": "🛠️ Herramientas"
     },
-    "{'text': 'Nuevo elemento'}",
-    "{'text': 'Nuevo elemento'}",
-    "{'text': 'Nuevo elemento'}",
-    "{'text': 'Nuevo elemento'}"
+    {
+        "value": "⌨️ teclados"
+    }
 ]

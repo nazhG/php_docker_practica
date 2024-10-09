@@ -8,7 +8,6 @@ class Nodo
 
     public function __construct($value)
     {
-        echo "Creando nodo <br>";
         $this->value = $value;
     }
 
